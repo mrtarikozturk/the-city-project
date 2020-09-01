@@ -1,8 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-ul{
+.topmenu{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,12 +11,12 @@ ul{
     overflow: auto;
 }
 
-li{
+.topmenu li{
     float: left;
     /* margin-right: 30px; */
 }
 
-li a{
+.topmenu li a{
     display: inline-block ;
     color: white;
     padding:  15px 15px;
@@ -26,6 +27,66 @@ li a{
     background-color: teal;
 }
 
-li a:hover{
+.topmenu li a:hover{
     background-color: crimson;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sidemenu li a{
+    display: block;
+    padding: 10px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    background-color: #eee;
+    color: #555;
+    
+}
+
+.sidemenu li a:hover{
+    background-color: #555;
+    color: white;
+     
+}
+
+.sidemenu{
+    width: 25%;
+    
+}
+
+.sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.content{
+    width: 75%;
+
+}
+
+.column{
+    float: left;
+    padding: 15px;
+}
+
+.header{
+    background-color: rgb(23,144,249);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.footer{
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+
 }
